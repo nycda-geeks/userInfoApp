@@ -1,0 +1,20 @@
+{
+  "name": "sarith",
+  "version": "1.0.0",
+  "description": "nodejs user infor app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sarith1"
+  },
+  "author": "Sarith",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  }
+}
