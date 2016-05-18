@@ -1,7 +1,18 @@
 doctype html
 html
 	head
+	link(rel='stylesheet', href='../style.css')
 	body
-	p #{match[0].firstname}
-	p #{match[0].lastname}
-	p #{match[0].email}
+		#nav
+			a(href='/') Home
+
+			a(href='/search') Search
+
+			a(href='/submit-user') Submit
+	if match[0]
+
+		p #{match[0].firstname}
+		p #{match[0].lastname}
+		p #{match[0].email}
+	if !match[0]
+		p Try again! That user was not found!

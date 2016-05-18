@@ -1,7 +1,15 @@
 doctype html
 html
     head
+    link(href='../style.css', rel='stylesheet')
     body
+        #nav
+            a(href='/') Home
+
+            a(href='/search') Search
+
+            a(href='/submit-user') Submit
+
         h1= title
         form(name="add-estimation", action="/submit-user", method="post")
             div.input
