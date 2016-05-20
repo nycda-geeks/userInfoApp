@@ -2,6 +2,8 @@ doctype html
 html
 	head
 	link(rel='stylesheet', href='../style.css')
+	script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+	
 	body
 		#nav
 			a(href='/') Home
@@ -10,6 +12,24 @@ html
 
 			a(href='/submit-user') Submit
 
-	form(action='./search' method='post')
-		input(name="userinput")
-		input(type="submit")
+	form(id = 'searchbar' action='./search' method='post' autocomplete='off')
+		input#input(name="userinput")
+		input#submit(type="submit")
+	p Kevin is een baas
+	p#list
+
+	script.
+		$("#input").keyup(function() {
+			$("#list").empty();
+			var filedata = {
+				input: $("#input").val()
+			}
+			$.post("/searchbar", filedata, function(response) {
+				for (var i = 0; i < response.match.length; i++) {
+					$("#list").append("<p>" + response.match[i] + "</p>");
+
+
+
+				}
+				})
+			});

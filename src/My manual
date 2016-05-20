@@ -1,0 +1,9 @@
+My manual
+Jade: inputveld een class geven.
+Jade: ruimte voor resultaten maken (p + classe naam (#))
+jQueryfile: dom aanspreken ()
+jQuery: Key up functie gebruiken zie link van Kevkev -> in de key up door de key up een var aanmaken waarin input komt. =data uit je file (=.val() van value)
+jQuery. value naar app posten. $.post
+in app value gaan lezen, en indexof gebruiken -> vergelijken van voornamen en achternamen in geparste json file, bij hoger of gelijk aan 0 naar resultaten pushen. (later ook iets pushen als er geen overeenkomst is.)
+jQuery: alle resultaten appenden aan de ruimte die gereserveerd is in de jade file (p#list).
+
